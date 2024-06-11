@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.hearder {
+  background-attachment: fixed;
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  height: 100vh;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0);
+  border-bottom: rgba(247, 241, 241, 0.47);
+  height: 9vh;
+  cursor: pointer;
+  background:linear-gradient(to left, rgba(7, 252, 158, 0.835) 0%, #53ebff 100%);
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 2rem;
+}
+
+nav ul li:hover {
+  background-color: rgba(247, 241, 241, 0.123);
+  letter-spacing: 0.1rem;
+}
+
+.sub-nav {
+  padding-bottom: 0;
+   display: none;
+   position: absolute;
+   background:linear-gradient(to left, rgba(7, 252, 158, 0.835) 0%, #53ebff 100%);
+   backdrop-filter: blur(5px);
+   border-radius: 2px;
+   
+ }
+ hr{
+   color:rgba(7, 252, 158, 0.835);
+ }
+.sub-nav a{
+  text-decoration: none;
+  color: black;
+}
+
+.sub-nav a:hover{
+   font-size: 2rem
+}
+
+#sub-list:hover .sub-nav {
+  display: block;
+  margin-top: 20px;
+}
+
+#sub-list2:hover .sub-nav {
+  display: block;
+  margin-top: 20px;
+}
+
+.right-nav {
+  font-size: 2rem;
+  padding-left: 6rem;
+  color: black;
+}
+
+.right-nav img{
+  width: 45px;
+    border-radius: 1px;
+    margin-right: 2px;
+}
+
+.left-nav {
+  display: flex;
+  padding-left: 56rem;
+  padding-right: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+#whole-nav{
+  display: flex;
+}
+.ham-burger{
+  display: none;
+}
+
+
+table{
+  border: solid rgba(7, 252, 158, 0.835) 0%, 0.2rem;
+}
+
+.table h1{
+  text-align: center;
+  
+  margin : 1.5rem;
+  font-size: 4rem;
+}
+
+table tr th{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+table, th, td {
+  border-radius: 2px;
+  padding-left: 20rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-top: 2rem;
+  padding-right: 20rem;
+}
+
+
+td:hover{
+  cursor: pointer;
+     font-size: 2rem;
+      color:  rgba(7, 252, 158, 0.835);
+}
+
+.table{
+  text-align: center;
+  display:grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.resp-body ul
+{
+  list-style:decimal;
+  font-size: 2rem;
+  display: none;
+  padding-left: 20px;
+}
+
+.resp-body ul li{
+  padding-bottom: 10px;
+}
+
+.resp-body ul li p:hover{
+     cursor: pointer;
+     font-size: 2rem;
+      color:  rgba(7, 252, 158, 0.835);
+}
+
+.arrow{
+  
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 6rem;
+  transform: translateY(13rem);
+  z-index: 22;
+}
+
+.cards{
+  display: flex;
+  margin: 39px 151px 0 208px;
+  overflow: hidden;
+}
+#right{
+  margin-right: 1.5rem;
+}
+
+#left{
+  margin-right: 1.5rem;
+}
+
+#onetwo{
+  /* display: grid; */
+  color: black;
+}
+
+span{
+  transition: 0.1s;
+  display: flex;
+}
+
+
+
+iframe{
+  padding: 1px;
+  /* border: solid; */
+  margin:11px;
+  margin-right: 0rem;
+  border-radius: 5px;
+}
+
+.card-container{
+  background:linear-gradient(to left, rgba(7, 252, 158, 0.835) 10%, #53ebff 100%);
+  margin: 1rem;
+  border: solid  rgba(7, 252, 158, 0.835) ;
+  border-radius: 18px;
+}
+
+
+.card-container h3{
+  padding-left: 4rem;
+  font-size: 2rem;
+}
+
+.card-container p{
+  padding: 5px;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+
+
+
+@media only screen and (max-width: 1174px){
+  .right-nav{
+    display: none;
+  }
+
+  .left-nav{
+    display: none;
+  }
+  
+  .ham-burger{
+    font-size: 5rem;
+    display: flex;
+    margin-right: 79%;
+  }
+  .cards{
+    display: grid;
+  }
+  #onetwo ,#second{
+    display: grid;
+  }
+  .arrow{
+    display: none;
+  }
+}
+
+@media only screen and (max-width:689px) {
+  .resp-body ul{
+    display: grid;
+  }
+  table{
+    display: none;
+  }
+  .table h1{
+    font-size:2.5rem;
+  }
+  footer h6 {
+    font-size: 1.5rem;
+  }
+  .icon {
+    font-size: 1.5rem;
+  }
+  #onetwo,#second {
+    display: grid;
+  }
+  
+.card-container{
+  margin: 0;
+}
+}
+
